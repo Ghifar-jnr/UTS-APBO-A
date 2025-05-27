@@ -1,0 +1,12 @@
+# UTS APBO (A) - Kelompok 1
+
+|--------------------------|-------------|
+|           Nama           |     NPM     |
+|--------------------------|-------------|
+| Aida Fitria              | 4523210007  |
+| Diva Cahya Hakim         | 4523210037  |
+| Ghifar Januar Abdillah   | 4523210051  |
+| Mochammad Fadhila Putra  | 4523210063  |
+| Priska Adriani           | 4523210085  |
+|--------------------------|-------------|
+
