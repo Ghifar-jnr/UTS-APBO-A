@@ -1,4 +1,6 @@
-# UTS APBO (A) - Kelompok 1
+# Ujian Tengah Semester APBO (A) - Kelompok 1
+
+## Anggota :
 
 |           Nama           |     NPM     |
 |--------------------------|-------------|
@@ -8,4 +10,4 @@
 | Mochammad Fadhila Putra  | 4523210063  |
 | Priska Adriani           | 4523210085  |
 
-
+## Sistem Reservasi Meja Billiard
