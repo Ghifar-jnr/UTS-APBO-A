@@ -18,3 +18,5 @@
 ### 3. Entitas Utama / Master
 ### 4. Relasi => Transaksi
 ### 5. Class Diagram (ERD)
+
+## Jawab !
