@@ -1,4 +1,8 @@
 # Ujian Tengah Semester APBO (A) - Kelompok 1
+Repositori ini berisi laporan hasil Ujian Tengah Semester (UTS) mata kuliah Analisis Pemrograman Berbasis Objek (APBO) - Kelas A
+
+## Dosen Pengampu
+Adi Wahyu Pribadi, S.Si., M.Kom
 
 ## Anggota :
 
@@ -15,12 +19,14 @@
 ## Buat :
 ### 1. Aktor / Role Yang Terlibat
 ### 2. Use Case
-### 3. Entitas Utama / Master
-### 4. Relasi => Transaksi
-### 5. Class Diagram (ERD)
+### 3. Entitas Utama
+### 4. Relasi
+### 5. Class Diagram
+### 6. WireFrame
+### 7. MockUp
 
 ## Jawab !
-### 1. Aktor yang terlibat : 
+### 1. Aktor / Role yang terlibat : 
 #### - Pelanggan
 Pelanggan berperan sebagai pengguna sistem yang melakukan pemesanan meja biliard,pengisian data pribadi seperti(nama,email,no telepon),pemilihan tanggal dan waktu reservasi,melakukan pembayaran,mengecek ketersediaan meja billiard dan dapat melakukan pembatalan(atas persetujuan pegawai kasir).
 
@@ -32,7 +38,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 
 ### 3. Entitas Utama
 ### Tabel Master
-#### 1. Tabel Pelanggan 
+#### - Tabel Pelanggan 
 
 | Nama Atribut  | Tipe Data    | Keterangan                 |
 |---------------|--------------|----------------------------|
@@ -41,7 +47,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | no_hp         | Varchar 15   | Nomor telepon pelanggan    |
 | email         | Varchar 30   | Email pelanggan            |
 
-#### 2. Tabel Meja_Billiard
+#### - Tabel Meja_Billiard
 
 | Nama Atribut  | Tipe Data    | Keterangan                 |
 |---------------|--------------|----------------------------|
@@ -49,7 +55,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | no_meja       | Varchar 5    | No Meja Billiard           |
 | status_meja   | ENUM         | Tersedia/digunakan/rusak   |
 
-#### 3. Tabel Metode_Pembayaran
+#### - Tabel Metode_Pembayaran
 
 | Nama Atribut  | Tipe Data    | Keterangan                 |
 |---------------|--------------|----------------------------|
@@ -57,7 +63,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | nama_metode   | Varchar 50   | Tunai, Debit, Qris         |
 
 ### Tabel Transaksi
-#### 1. Tabel Reservasi
+#### - Tabel Reservasi
 
 | Nama Atribut      | Tipe Data    | Keterangan                         |
 |-------------------|--------------|------------------------------------|
@@ -66,7 +72,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | waktu_pemesanan   | Datatime     | Waktu saat reservasi dibuat        |
 | tanggal_pemesanan | Date         | Tanggal reservasi untuk bermain    |
 
-#### 2. Tabel Detail_Reservasi
+#### - Tabel Detail_Reservasi
 
 | Nama Atribut      | Tipe Data    | Keterangan                         |
 |-------------------|--------------|------------------------------------|
@@ -77,7 +83,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | durasi_permainan  | Varchar 10   | Lama durasi permainan (dalam jam)  |
 | total_biaya       | Varchar 20   | Total biaya sebelum pembayaran     |
 
-#### 3. Tabel Bayar
+#### - Tabel Bayar
 
 | Nama Atribut      | Tipe Data    | Keterangan                         |
 |-------------------|--------------|------------------------------------|
@@ -86,10 +92,14 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | id_metode         | Int 5  (FK)  | Relasi ke tabel Metode_Pembayaran  |
 | jumlah_bayar      | Varchar 50   | Jumlah nominal pembayaran          |
 
-#### 4. Tabel Pembatalan
+#### - Tabel Pembatalan
 
 | Nama Atribut      | Tipe Data    | Keterangan                          |
 |-------------------|--------------|-------------------------------------|
 | id_batal          | Int 10 (PK)  | ID unik pembatalan                  |
 | id_reservasi      | Int 10 (FK)  | Relasi ke reservasi yang dibatalkan |
 | alasan_pembatalan | Varchar 100  | Alasan pembatalan                   |
+
+### 4. Relasi
+![ERD UTS NEW drawio](https://github.com/user-attachments/assets/5fa0a5f9-72f8-4a6b-8f3c-be8288590304)
+
