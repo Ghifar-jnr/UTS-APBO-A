@@ -36,6 +36,9 @@ Pegawai Kasir berperan sebagai pengelola transaksi yang bekerja atau bertugas un
 #### - Pemilik Biliard
 Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inventaris,dan data pelanggan),dan dapat melihat laporan reservasi.
 
+### 2. Use Case 
+![Screenshot 2025-05-29 021929](https://github.com/user-attachments/assets/760b22dd-a2c9-45b5-8923-999ed5452980)
+
 ### 3. Entitas Utama
 ### Tabel Master
 #### - Tabel Pelanggan 
