@@ -62,7 +62,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 | Nama Atribut      | Tipe Data    | Keterangan                         |
 |-------------------|--------------|------------------------------------|
 | id_reservasi      | Int 10 (PK)  | ID unik reservasi                  |
-| id_pelanggan      | Int 10 (FK)  | Pelanggan yang melakukan reservasi |
+| id_pelanggan      | Int 10 (FK)  | Relasi ke tabel pelanggan          |
 | waktu_pemesanan   | Datatime     | Waktu saat reservasi dibuat        |
 | tanggal_pemesanan | Date         | Tanggal reservasi untuk bermain    |
 
@@ -72,7 +72,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 |-------------------|--------------|------------------------------------|
 | id_detail         | Int 10 (PK)  | ID detail reservasi                |
 | id_ reservasi     | Int 10 (FK)  | Relasi ke tabel reservasi          |
-| id_meja           | Int 5  (FK)  | Meja yang dipesan                  |
+| id_meja           | Int 5  (FK)  | Relasi ke tabel Meja_Billiard      |
 | jam_mulai         | Varchar 10   | Jam mulai bermain                  |
 | durasi_permainan  | Varchar 10   | Lama durasi permainan (dalam jam)  |
 | total_biaya       | Varchar 20   | Total biaya sebelum pembayaran     |
@@ -83,7 +83,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 |-------------------|--------------|------------------------------------|
 | id_bayar          | Int 10 (PK)  | ID unik pembayaran                 |
 | id_reservasi      | Int 10 (FK)  | Relasi ke tabel reservasi          |
-| id_metode         | Int 5  (FK)  | Metode pembayaran yang digunakan   |
+| id_metode         | Int 5  (FK)  | Relasi ke tabel Metode_Pembayaran  |
 | jumlah_bayar      | Varchar 50   | Jumlah nominal pembayaran          |
 
 #### 4. Tabel Pembatalan
