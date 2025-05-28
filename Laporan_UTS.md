@@ -30,3 +30,66 @@ Pegawai Kasir berperan sebagai pengelola transaksi yang bekerja atau bertugas un
 #### - Pemilik Biliard
 Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inventaris,dan data pelanggan),dan dapat melihat laporan reservasi.
 
+### 3. Entitas Utama
+### Tabel Master
+#### 1. Tabel Pelanggan 
+
+| Nama Atribut  | Tipe Data    | Keterangan                 |
+|---------------|--------------|----------------------------|
+| id_pelanggan  | Int 10 (PK)  | ID unik pelanggan          |
+| nama          | Varchar 100  | Nama lengkap pelanggan     |
+| no_hp         | Varchar 15   | Nomor telepon pelanggan    |
+| email         | Varchar 30   | Email pelanggan            |
+
+#### 2. Tabel Meja_Billiard
+
+| Nama Atribut  | Tipe Data    | Keterangan                 |
+|---------------|--------------|----------------------------|
+| id_meja       | Int 5 (PK)   | ID unik Meja Billiard      |
+| no_meja       | Varchar 5    | No Meja Billiard           |
+| status_meja   | ENUM         | Tersedia/digunakan/rusak   |
+
+#### 3. Tabel Metode_Pembayaran
+
+| Nama Atribut  | Tipe Data    | Keterangan                 |
+|---------------|--------------|----------------------------|
+| id_metode     | Int 10 (PK)  | ID unik metode pembayaran  |
+| nama_metode   | Varchar 50   | Tunai, Debit, Qris         |
+
+### Tabel Transaksi
+#### 1. Tabel Reservasi
+
+| Nama Atribut      | Tipe Data    | Keterangan                         |
+|-------------------|--------------|------------------------------------|
+| id_reservasi      | Int 10 (PK)  | ID unik reservasi                  |
+| id_pelanggan      | Int 10 (FK)  | Relasi ke tabel pelanggan          |
+| waktu_pemesanan   | Datatime     | Waktu saat reservasi dibuat        |
+| tanggal_pemesanan | Date         | Tanggal reservasi untuk bermain    |
+
+#### 2. Tabel Detail_Reservasi
+
+| Nama Atribut      | Tipe Data    | Keterangan                         |
+|-------------------|--------------|------------------------------------|
+| id_detail         | Int 10 (PK)  | ID detail reservasi                |
+| id_ reservasi     | Int 10 (FK)  | Relasi ke tabel reservasi          |
+| id_meja           | Int 5  (FK)  | Relasi ke tabel Meja_Billiard      |
+| jam_mulai         | Varchar 10   | Jam mulai bermain                  |
+| durasi_permainan  | Varchar 10   | Lama durasi permainan (dalam jam)  |
+| total_biaya       | Varchar 20   | Total biaya sebelum pembayaran     |
+
+#### 3. Tabel Bayar
+
+| Nama Atribut      | Tipe Data    | Keterangan                         |
+|-------------------|--------------|------------------------------------|
+| id_bayar          | Int 10 (PK)  | ID unik pembayaran                 |
+| id_reservasi      | Int 10 (FK)  | Relasi ke tabel reservasi          |
+| id_metode         | Int 5  (FK)  | Relasi ke tabel Metode_Pembayaran  |
+| jumlah_bayar      | Varchar 50   | Jumlah nominal pembayaran          |
+
+#### 4. Tabel Pembatalan
+
+| Nama Atribut      | Tipe Data    | Keterangan                          |
+|-------------------|--------------|-------------------------------------|
+| id_batal          | Int 10 (PK)  | ID unik pembatalan                  |
+| id_reservasi      | Int 10 (FK)  | Relasi ke reservasi yang dibatalkan |
+| alasan_pembatalan | Varchar 100  | Alasan pembatalan                   |
