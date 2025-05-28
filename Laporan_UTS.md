@@ -103,6 +103,9 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 ### 4. Relasi
 ![ERD UTS NEW drawio](https://github.com/user-attachments/assets/5fa0a5f9-72f8-4a6b-8f3c-be8288590304)
 
+### 5. Class Diagram
+![Untitled (1)](https://github.com/user-attachments/assets/045558fd-4058-465e-a0a6-366f45deb2d4)
+
 ### 6. Wireframe
 <img width="266" alt="Tangkapan Layar 2025-05-29 pukul 01 29 03" src="https://github.com/user-attachments/assets/6749e4d0-e46a-481e-8ae8-39f37b906e71" />
 <img width="267" alt="Tangkapan Layar 2025-05-29 pukul 01 29 14" src="https://github.com/user-attachments/assets/67519c72-673f-4918-b262-2156caf3474d" />
