@@ -56,7 +56,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 |---------------|--------------|----------------------------|
 | id_meja       | Int 5 (PK)   | ID unik Meja Billiard      |
 | no_meja       | Varchar 5    | No Meja Billiard           |
-| status_meja   | ENUM         | Tersedia/digunakan/rusak   |
+| status_meja   | ENUM         | Tersedia / Digunakan       |
 
 #### - Tabel Metode_Pembayaran
 
