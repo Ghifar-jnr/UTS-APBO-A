@@ -36,6 +36,9 @@ Pegawai Kasir berperan sebagai pengelola transaksi yang bekerja atau bertugas un
 #### - Pemilik Biliard
 Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inventaris,dan data pelanggan),dan dapat melihat laporan reservasi.
 
+### 2. Use Case 
+![Diagram Tanpa Judul drawio](https://github.com/user-attachments/assets/ce19ca40-5a82-40a3-88de-759c966786f4)
+
 ### 3. Entitas Utama
 ### Tabel Master
 #### - Tabel Pelanggan 
@@ -53,7 +56,7 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 |---------------|--------------|----------------------------|
 | id_meja       | Int 5 (PK)   | ID unik Meja Billiard      |
 | no_meja       | Varchar 5    | No Meja Billiard           |
-| status_meja   | ENUM         | Tersedia/digunakan/rusak   |
+| status_meja   | ENUM         | Tersedia / Digunakan       |
 
 #### - Tabel Metode_Pembayaran
 
@@ -102,6 +105,9 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 
 ### 4. Relasi
 ![ERD UTS NEW drawio](https://github.com/user-attachments/assets/5fa0a5f9-72f8-4a6b-8f3c-be8288590304)
+
+### 5. Class Diagram
+![Untitled (1)](https://github.com/user-attachments/assets/045558fd-4058-465e-a0a6-366f45deb2d4)
 
 ### 6. Wireframe
 <img width="266" alt="Tangkapan Layar 2025-05-29 pukul 01 29 03" src="https://github.com/user-attachments/assets/6749e4d0-e46a-481e-8ae8-39f37b906e71" />
