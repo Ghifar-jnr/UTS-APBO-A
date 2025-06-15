@@ -24,6 +24,8 @@ Adi Wahyu Pribadi, S.Si., M.Kom
 ### 5. Class Diagram
 ### 6. WireFrame
 ### 7. MockUp
+### 8. Sequence Diagram 
+### 9. Fakta Integritas 
 
 ## Jawab !
 ### 1. Aktor / Role yang terlibat : 
@@ -118,3 +120,16 @@ Pemilik Biliard berperan sebagai mengelola data seperti (meja biliard,alat inven
 <img width="214" alt="Tangkapan Layar 2025-05-29 pukul 01 29 48" src="https://github.com/user-attachments/assets/cb1b7fe0-451b-4c4a-bf9f-cedaed1f3ec7" />
 <img width="215" alt="Tangkapan Layar 2025-05-29 pukul 01 30 02" src="https://github.com/user-attachments/assets/3edd0aef-16ec-474a-a746-023006209edb" />
 <img width="321" alt="Tangkapan Layar 2025-05-29 pukul 01 30 21" src="https://github.com/user-attachments/assets/3b09fc49-5e88-408d-8b80-d083e32d36ba" />
+
+### 8. Sequence Diagram 
+#### a. Pelanggan 
+![WhatsApp Image 2025-06-15 at 18 37 33_048a0811](https://github.com/user-attachments/assets/c43de6b9-915c-43d6-aa44-2c7a8e4df5f3)
+
+#### b. Pegawai
+![WhatsApp Image 2025-06-15 at 18 37 33_f3ef615d](https://github.com/user-attachments/assets/3a5461ae-0535-4032-af31-1d228fee7bfb)
+
+#### c. Pemilik
+![WhatsApp Image 2025-06-15 at 18 37 33_c1d7c321](https://github.com/user-attachments/assets/42e10044-997d-4a8d-9b70-4d21a684c82d)
+
+### 9. Fakta Integritas
+![WhatsApp Image 2025-06-15 at 14 32 44_2c715453](https://github.com/user-attachments/assets/676db3ad-961d-427b-a378-a077a3c9ed95)
